@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>kalkulator tambah</title>
+</head>
+<body>
+  <input type="number" id="angka1">
+  <input type="number" id="angka2">
+  <button onclick="hitungTambah()">Hitung!</button>
+  <br/>
+  <p id="hasiloutput"></p>
+  <script>
+      function hitungTambah(){
+          var angka1 = document.getElementById('angka1').value;
+          var angka2 = document.getElementById('angka2').value;
+          var hasil = parseInt(angka1) + parseInt(angka2);
+          document.getElementById('hasiloutput').innerHTML = hasil;
+        }
+  </script>
+</body>
+</html>
